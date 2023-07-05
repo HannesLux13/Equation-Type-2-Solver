@@ -1,13 +1,25 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.33808.371
-MinimumVisualStudioVersion = 10.0.40219.1
-Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4CF82F11-286B-43A8-A03D-C168D3D9473D}
-	EndGlobalSection
-EndGlobal
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	float d;
+	double x, y;
+    
+	a = 0;
+	b = 0;
+	c = 0;
+
+	cout << "Enter a then b then c";
+
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	d = b ^ 2 - 4 * a * c;
+	x = (-b + sqrt(d)) / 2;
+	y = (-b - sqrt(d)) / 2;
+
+	cout << "X1= " << x << '\n' << "X2= " << y;
+	return 0;
+}
